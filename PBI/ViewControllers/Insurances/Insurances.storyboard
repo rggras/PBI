@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Laa-uV-aby">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Light.otf">
+            <string>SFProDisplay-Light</string>
+        </array>
+        <array key="SF-Pro-Display-Medium.otf">
+            <string>SFProDisplay-Medium</string>
+        </array>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--My Insurance-->
+        <scene sceneID="rP9-22-P1F">
+            <objects>
+                <viewController id="gaW-Cf-6H7" customClass="InsurancesViewController" customModule="PBI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="T2t-RH-3Cg"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qj2-Lx-ODd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PjO-w7-T3L">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InsuranceIcon" translatesAutoresizingMaskIntoConstraints="NO" id="yyS-sF-KgO">
+                                <rect key="frame" x="26" y="108" width="53" height="46"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PSn-yj-p5d">
+                                <rect key="frame" x="103" y="108" width="3.5" height="19"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w18-ld-gWs">
+                                <rect key="frame" x="103" y="125" width="123" height="32"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                <state key="normal" title="My Insurance card">
+                                    <color key="titleColor" red="0.25490196078431371" green="0.32549019607843138" blue="0.4823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Lny-JZ-gYB" kind="show" id="W1W-cG-FnJ"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oGy-Mx-umf">
+                                <rect key="frame" x="0.0" y="190" width="320" height="1"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="iDp-3y-4Xc"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Insurer" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dLz-c6-6d2">
+                                <rect key="frame" x="28" y="219" width="48" height="19"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
+                                <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lqk-a2-0hK">
+                                <rect key="frame" x="28" y="238" width="3.5" height="19"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="16"/>
+                                <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Policy" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7RF-Hi-muu">
+                                <rect key="frame" x="28" y="266.5" width="41.5" height="19"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
+                                <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r27-J2-tc3">
+                                <rect key="frame" x="28" y="285.5" width="4" height="19"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="16"/>
+                                <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Policy Period" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EQX-d4-PZU">
+                                <rect key="frame" x="28" y="314" width="89" height="19"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
+                                <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08/20/2017 to 09/20/2017" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdU-B4-aWd">
+                                <rect key="frame" x="28" y="333" width="181.5" height="19"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="16"/>
+                                <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Owner" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UIq-kw-lor">
+                                <rect key="frame" x="28" y="361.5" width="46.5" height="19"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
+                                <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N6b-v7-s3J">
+                                <rect key="frame" x="28" y="380.5" width="4" height="19"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="16"/>
+                                <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Details" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8d4-Pl-Owh">
+                                <rect key="frame" x="28" y="409" width="106" height="19"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Medium" family="SF Pro Display" pointSize="16"/>
+                                <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u6j-vp-7QK">
+                                <rect key="frame" x="28" y="428" width="4" height="19"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Light" family="SF Pro Display" pointSize="16"/>
+                                <color key="textColor" red="0.29803921570000003" green="0.29803921570000003" blue="0.29803921570000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y0r-UX-4Hb">
+                                <rect key="frame" x="0.0" y="571" width="320" height="1"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="XKz-Ob-mPy"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sjB-Ef-Caq">
+                                <rect key="frame" x="106.5" y="572" width="1" height="95"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="efO-aJ-Cxi"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LBn-xj-3eS">
+                                <rect key="frame" x="212.5" y="572" width="1" height="95"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="1" id="6ad-2e-Wlm"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gYR-bd-EhK">
+                                <rect key="frame" x="0.0" y="572" width="106.5" height="80"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                <state key="normal" title="Claim">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InsuranceClaimIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Q1x-uF-hf7">
+                                <rect key="frame" x="0.0" y="572" width="106.5" height="70"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HQq-Eo-Zps">
+                                <rect key="frame" x="106.5" y="572" width="107" height="80"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                <state key="normal" title="Contact">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InsuranceContactIcon" translatesAutoresizingMaskIntoConstraints="NO" id="rIV-xa-5aa">
+                                <rect key="frame" x="106.5" y="572" width="107" height="70"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HMN-Gx-wPq">
+                                <rect key="frame" x="213.5" y="572" width="106.5" height="80"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="16"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.89411764705882346" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="cancelDidPressWithSender:" destination="gaW-Cf-6H7" eventType="touchUpInside" id="SNC-4B-oyB"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InsuranceCancelIcon" translatesAutoresizingMaskIntoConstraints="NO" id="KvE-PJ-TNU">
+                                <rect key="frame" x="213.5" y="572" width="106.5" height="70"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gYR-bd-EhK" firstAttribute="trailing" secondItem="Q1x-uF-hf7" secondAttribute="trailing" id="16O-74-m29"/>
+                            <constraint firstItem="r27-J2-tc3" firstAttribute="top" secondItem="7RF-Hi-muu" secondAttribute="bottom" id="1bB-OE-m4w"/>
+                            <constraint firstItem="7RF-Hi-muu" firstAttribute="top" secondItem="lqk-a2-0hK" secondAttribute="bottom" constant="10" id="1gL-SM-THk"/>
+                            <constraint firstItem="pdU-B4-aWd" firstAttribute="top" secondItem="EQX-d4-PZU" secondAttribute="bottom" id="1vu-QF-3e0"/>
+                            <constraint firstItem="HMN-Gx-wPq" firstAttribute="trailing" secondItem="KvE-PJ-TNU" secondAttribute="trailing" id="3jI-mM-7Jt"/>
+                            <constraint firstItem="y0r-UX-4Hb" firstAttribute="leading" secondItem="PjO-w7-T3L" secondAttribute="leading" id="4Qw-WC-KXt"/>
+                            <constraint firstItem="gYR-bd-EhK" firstAttribute="top" secondItem="Q1x-uF-hf7" secondAttribute="top" id="5t0-Gr-elG"/>
+                            <constraint firstItem="HQq-Eo-Zps" firstAttribute="leading" secondItem="gYR-bd-EhK" secondAttribute="trailing" id="61d-1l-mL2"/>
+                            <constraint firstItem="w18-ld-gWs" firstAttribute="top" secondItem="PSn-yj-p5d" secondAttribute="bottom" constant="-2" id="6l7-lp-CHd"/>
+                            <constraint firstItem="oGy-Mx-umf" firstAttribute="top" secondItem="yyS-sF-KgO" secondAttribute="bottom" constant="36" id="6sx-tl-EqN"/>
+                            <constraint firstItem="HQq-Eo-Zps" firstAttribute="trailing" secondItem="rIV-xa-5aa" secondAttribute="trailing" id="7zQ-2Y-XD5"/>
+                            <constraint firstItem="sjB-Ef-Caq" firstAttribute="top" secondItem="y0r-UX-4Hb" secondAttribute="bottom" id="8JA-VI-axW"/>
+                            <constraint firstItem="UIq-kw-lor" firstAttribute="top" secondItem="pdU-B4-aWd" secondAttribute="bottom" constant="10" id="9ZP-Sm-hxd"/>
+                            <constraint firstItem="gYR-bd-EhK" firstAttribute="bottom" secondItem="Q1x-uF-hf7" secondAttribute="bottom" constant="10" id="9f8-6J-Nwi"/>
+                            <constraint firstItem="lqk-a2-0hK" firstAttribute="top" secondItem="dLz-c6-6d2" secondAttribute="bottom" id="9gd-pJ-fZk"/>
+                            <constraint firstItem="EQX-d4-PZU" firstAttribute="top" secondItem="r27-J2-tc3" secondAttribute="bottom" constant="10" id="ArR-q0-tvq"/>
+                            <constraint firstItem="gYR-bd-EhK" firstAttribute="leading" secondItem="PjO-w7-T3L" secondAttribute="leading" id="B8b-cy-q1j"/>
+                            <constraint firstItem="w18-ld-gWs" firstAttribute="leading" secondItem="yyS-sF-KgO" secondAttribute="trailing" constant="24" id="But-RI-hIM"/>
+                            <constraint firstItem="HMN-Gx-wPq" firstAttribute="top" secondItem="KvE-PJ-TNU" secondAttribute="top" id="Dm4-CC-aNV"/>
+                            <constraint firstAttribute="trailing" secondItem="oGy-Mx-umf" secondAttribute="trailing" id="E86-2j-wMe"/>
+                            <constraint firstItem="gYR-bd-EhK" firstAttribute="top" secondItem="y0r-UX-4Hb" secondAttribute="bottom" id="EUR-9u-Z5P"/>
+                            <constraint firstItem="r27-J2-tc3" firstAttribute="leading" secondItem="PjO-w7-T3L" secondAttribute="leading" constant="28" id="EXb-hL-gy5"/>
+                            <constraint firstAttribute="bottom" secondItem="y0r-UX-4Hb" secondAttribute="bottom" constant="95" id="EXt-MK-OqH"/>
+                            <constraint firstItem="PSn-yj-p5d" firstAttribute="leading" secondItem="yyS-sF-KgO" secondAttribute="trailing" constant="24" id="F0y-JY-5nF"/>
+                            <constraint firstItem="LBn-xj-3eS" firstAttribute="top" secondItem="y0r-UX-4Hb" secondAttribute="bottom" id="IYb-MD-KZZ"/>
+                            <constraint firstItem="HMN-Gx-wPq" firstAttribute="leading" secondItem="HQq-Eo-Zps" secondAttribute="trailing" id="J3c-N5-2p0"/>
+                            <constraint firstAttribute="bottom" secondItem="HQq-Eo-Zps" secondAttribute="bottom" constant="15" id="K92-i5-Fw9"/>
+                            <constraint firstItem="HMN-Gx-wPq" firstAttribute="leading" secondItem="KvE-PJ-TNU" secondAttribute="leading" id="KyV-r3-SG9"/>
+                            <constraint firstItem="HMN-Gx-wPq" firstAttribute="bottom" secondItem="KvE-PJ-TNU" secondAttribute="bottom" constant="10" id="Pa6-6u-9il"/>
+                            <constraint firstItem="7RF-Hi-muu" firstAttribute="leading" secondItem="PjO-w7-T3L" secondAttribute="leading" constant="28" id="Pc8-E9-qHg"/>
+                            <constraint firstItem="lqk-a2-0hK" firstAttribute="leading" secondItem="PjO-w7-T3L" secondAttribute="leading" constant="28" id="WgU-Mt-uq6"/>
+                            <constraint firstAttribute="bottom" secondItem="sjB-Ef-Caq" secondAttribute="bottom" id="Wte-9s-quI"/>
+                            <constraint firstItem="u6j-vp-7QK" firstAttribute="top" secondItem="8d4-Pl-Owh" secondAttribute="bottom" id="YBz-SG-9Z7"/>
+                            <constraint firstItem="HMN-Gx-wPq" firstAttribute="top" secondItem="y0r-UX-4Hb" secondAttribute="bottom" id="YKB-2p-O8R"/>
+                            <constraint firstItem="UIq-kw-lor" firstAttribute="leading" secondItem="PjO-w7-T3L" secondAttribute="leading" constant="28" id="Yaz-a2-S6C"/>
+                            <constraint firstItem="HQq-Eo-Zps" firstAttribute="bottom" secondItem="rIV-xa-5aa" secondAttribute="bottom" constant="10" id="YeQ-4z-GeT"/>
+                            <constraint firstItem="pdU-B4-aWd" firstAttribute="leading" secondItem="PjO-w7-T3L" secondAttribute="leading" constant="28" id="ZwG-Wc-Yxk"/>
+                            <constraint firstItem="HQq-Eo-Zps" firstAttribute="top" secondItem="rIV-xa-5aa" secondAttribute="top" id="Zyt-O7-aHH"/>
+                            <constraint firstAttribute="bottom" secondItem="LBn-xj-3eS" secondAttribute="bottom" id="bmG-zr-L6h"/>
+                            <constraint firstAttribute="bottom" secondItem="HMN-Gx-wPq" secondAttribute="bottom" constant="15" id="cGM-tD-vvw"/>
+                            <constraint firstItem="gYR-bd-EhK" firstAttribute="width" secondItem="HQq-Eo-Zps" secondAttribute="width" id="cJo-Xb-msW"/>
+                            <constraint firstItem="dLz-c6-6d2" firstAttribute="top" secondItem="oGy-Mx-umf" secondAttribute="bottom" constant="28" id="cuR-hB-hEm"/>
+                            <constraint firstItem="N6b-v7-s3J" firstAttribute="leading" secondItem="PjO-w7-T3L" secondAttribute="leading" constant="28" id="dez-P3-wEG"/>
+                            <constraint firstItem="yyS-sF-KgO" firstAttribute="top" secondItem="T2t-RH-3Cg" secondAttribute="bottom" constant="44" id="dxL-x1-KxF"/>
+                            <constraint firstItem="EQX-d4-PZU" firstAttribute="leading" secondItem="PjO-w7-T3L" secondAttribute="leading" constant="28" id="eJD-rK-IgK"/>
+                            <constraint firstItem="oGy-Mx-umf" firstAttribute="leading" secondItem="PjO-w7-T3L" secondAttribute="leading" id="eM3-hC-qUY"/>
+                            <constraint firstItem="PSn-yj-p5d" firstAttribute="top" secondItem="yyS-sF-KgO" secondAttribute="top" id="fZb-hX-EKU"/>
+                            <constraint firstItem="HQq-Eo-Zps" firstAttribute="top" secondItem="y0r-UX-4Hb" secondAttribute="bottom" id="g1A-Wl-8XF"/>
+                            <constraint firstItem="HQq-Eo-Zps" firstAttribute="width" secondItem="HMN-Gx-wPq" secondAttribute="width" id="lW7-cA-8bN"/>
+                            <constraint firstItem="HQq-Eo-Zps" firstAttribute="leading" secondItem="sjB-Ef-Caq" secondAttribute="leading" id="o9b-XF-XT8"/>
+                            <constraint firstAttribute="trailing" secondItem="HMN-Gx-wPq" secondAttribute="trailing" id="sZH-lW-Xbw"/>
+                            <constraint firstItem="u6j-vp-7QK" firstAttribute="leading" secondItem="PjO-w7-T3L" secondAttribute="leading" constant="28" id="se3-zQ-q6W"/>
+                            <constraint firstItem="LBn-xj-3eS" firstAttribute="trailing" secondItem="HQq-Eo-Zps" secondAttribute="trailing" id="teP-Sm-xrL"/>
+                            <constraint firstItem="N6b-v7-s3J" firstAttribute="top" secondItem="UIq-kw-lor" secondAttribute="bottom" id="vCm-Sg-R37"/>
+                            <constraint firstItem="dLz-c6-6d2" firstAttribute="leading" secondItem="PjO-w7-T3L" secondAttribute="leading" constant="28" id="vJP-YJ-RHe"/>
+                            <constraint firstItem="8d4-Pl-Owh" firstAttribute="leading" secondItem="PjO-w7-T3L" secondAttribute="leading" constant="28" id="vPt-Np-YY5"/>
+                            <constraint firstItem="gYR-bd-EhK" firstAttribute="leading" secondItem="Q1x-uF-hf7" secondAttribute="leading" id="vd4-JA-KXn"/>
+                            <constraint firstItem="HQq-Eo-Zps" firstAttribute="leading" secondItem="rIV-xa-5aa" secondAttribute="leading" id="vms-CI-xwt"/>
+                            <constraint firstAttribute="trailing" secondItem="y0r-UX-4Hb" secondAttribute="trailing" id="wlx-Jw-1nN"/>
+                            <constraint firstAttribute="bottom" secondItem="gYR-bd-EhK" secondAttribute="bottom" constant="15" id="wqM-ps-g3T"/>
+                            <constraint firstItem="yyS-sF-KgO" firstAttribute="leading" secondItem="PjO-w7-T3L" secondAttribute="leading" constant="26" id="wua-kd-rdF"/>
+                            <constraint firstItem="8d4-Pl-Owh" firstAttribute="top" secondItem="N6b-v7-s3J" secondAttribute="bottom" constant="10" id="zIq-jv-hT2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="My Insurance" id="a2S-52-deM">
+                        <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="uxp-3x-iP4">
+                            <connections>
+                                <action selector="menuDidPressWithSender:" destination="gaW-Cf-6H7" id="i5A-oT-wlH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="contactDetailsLabel" destination="u6j-vp-7QK" id="FqE-VK-JHJ"/>
+                        <outlet property="insurerLabel" destination="lqk-a2-0hK" id="FBp-Bh-mPg"/>
+                        <outlet property="ownerLabel" destination="N6b-v7-s3J" id="HpX-zB-Og9"/>
+                        <outlet property="policyLabel" destination="r27-J2-tc3" id="Bkb-fC-gtf"/>
+                        <outlet property="policyPeriodLabel" destination="pdU-B4-aWd" id="S08-tz-9vX"/>
+                        <outlet property="userLabel" destination="PSn-yj-p5d" id="HPd-si-TEv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QrD-aV-Djp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="213.59999999999999" y="113.79310344827587"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="N8N-KR-j7b">
+            <objects>
+                <viewController id="Lny-JZ-gYB" customClass="PBIViewController" customModule="PBI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ixr-Rg-sBg"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZjD-f9-mjT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pid-fY-AJu">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="InsuranceCard" translatesAutoresizingMaskIntoConstraints="NO" id="FaN-sB-yLo">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="FaN-sB-yLo" secondAttribute="bottom" id="75R-kT-rKq"/>
+                            <constraint firstAttribute="trailing" secondItem="FaN-sB-yLo" secondAttribute="trailing" id="9an-dS-7Bh"/>
+                            <constraint firstItem="FaN-sB-yLo" firstAttribute="leading" secondItem="pid-fY-AJu" secondAttribute="leading" id="MC6-4N-EgM"/>
+                            <constraint firstItem="FaN-sB-yLo" firstAttribute="top" secondItem="pid-fY-AJu" secondAttribute="top" id="Uyc-jj-5ot"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MGt-eY-Kx5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1002" y="114"/>
+        </scene>
+        <!--Slide Navigation Controller-->
+        <scene sceneID="Upi-bh-Pzo">
+            <objects>
+                <navigationController id="Laa-uV-aby" customClass="SlideNavigationController" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4pc-Zc-wlp" customClass="PBINavigationBar" customModule="PBI" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="gaW-Cf-6H7" kind="relationship" relationship="rootViewController" id="r3t-J6-1lR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2vt-SU-SfN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-498" y="114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="InsuranceCancelIcon" width="45" height="45"/>
+        <image name="InsuranceCard" width="303" height="399"/>
+        <image name="InsuranceClaimIcon" width="45" height="45"/>
+        <image name="InsuranceContactIcon" width="45" height="45"/>
+        <image name="InsuranceIcon" width="53" height="46"/>
+        <image name="MenuIcon" width="24" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="WDd-ms-6ZL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Pro-Display-Semibold.otf">
+            <string>SFProDisplay-Semibold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--About-->
+        <scene sceneID="3fG-0H-RIU">
+            <objects>
+                <viewController id="biL-Xw-Z6C" customClass="AboutViewController" customModule="PBI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PRe-TU-NWD"/>
+                        <viewControllerLayoutGuide type="bottom" id="w71-zB-l2S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P8g-vJ-2LR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPR-77-tRy">
+                                <rect key="frame" x="161" y="88" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oPR-77-tRy" firstAttribute="centerX" secondItem="P8g-vJ-2LR" secondAttribute="centerX" id="rFg-sx-7WN"/>
+                            <constraint firstItem="oPR-77-tRy" firstAttribute="top" secondItem="PRe-TU-NWD" secondAttribute="bottom" constant="24" id="rd6-ND-E6f"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="About" id="hfR-zF-xJx">
+                        <barButtonItem key="leftBarButtonItem" image="MenuIcon" id="7wL-z4-QGS">
+                            <connections>
+                                <action selector="menuDidPressWithSender:" destination="biL-Xw-Z6C" id="nd0-eW-49X"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="versionLabel" destination="oPR-77-tRy" id="5sd-8B-jNJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HO5-ey-zJc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215" y="114"/>
+        </scene>
+        <!--Slide Navigation Controller-->
+        <scene sceneID="r0E-NP-yn3">
+            <objects>
+                <navigationController id="WDd-ms-6ZL" customClass="SlideNavigationController" sceneMemberID="viewController">
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="667"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gcT-mF-NL7" customClass="PBINavigationBar" customModule="PBI" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="biL-Xw-Z6C" kind="relationship" relationship="rootViewController" id="VoV-bP-zIG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V4A-7R-PoW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-498" y="114"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="MenuIcon" width="24" height="20"/>
+    </resources>
+</document>
